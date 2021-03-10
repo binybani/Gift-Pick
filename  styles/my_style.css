@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Pacifico&display=swap');
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Arimo', sans-serif; */
+
+body{
+    font-family: 'Arimo', sans-serif;
+}
+.my-btn{
+    margin: 1.2em;
+    padding: 0.5em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    
+}

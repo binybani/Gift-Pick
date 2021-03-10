@@ -1,0 +1,35 @@
+.btn-outline-info {
+    width: 40%;
+    float: left;
+    color: orange;
+    border-color: orange;
+
+  }
+  .btn-info {
+    color: #fff;
+    background-color:orange;
+    border-color: orange;;
+  }
+
+  .navbar-brand {
+    text-align: center;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 2em;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Pacifico', cursive;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: orange;;
+  }
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
