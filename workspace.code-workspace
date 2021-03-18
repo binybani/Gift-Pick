@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../march09"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Gift-Pick"
+	}
+}
