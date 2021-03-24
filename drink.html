@@ -173,14 +173,7 @@
     <!--------------------------------------------------------------------->
 
     <script>
-      function readBrand(){
-        db.collection("brands").doc("starbucks")
-        .onSnapshot(function(snap){
-          console.log(snap.data());
-          document.getElementById("brand").innerHTML = snap.data().brand;
-        })
-      }
-      readBrand();
+
       function writeBrands() {
         var brandsRef = db.collection("brands");
         
