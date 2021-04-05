@@ -11,77 +11,113 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Optional Styles and customizations of your own-->
-  <link rel="stylesheet" href="./ styles/my_bootstrap.css">
-  <link rel="stylesheet" href="./ styles/my_style.css">
+  <link rel="stylesheet" href="./styles/my_bootstrap.css">
+  <link rel="stylesheet" href="./styles/my_style.css">
 
   <title>Gift-Pick</title>
 </head>
 
 <body>
-  <div class="container">
+  <div>
     <div class="container-fluid fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a id="title" class="navbar-brand" href="#">Gift Pick</a>
+          <a class="navbar-brand" href="#">Gift Pick</a>
           <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbspLogin</a>
         </div>
-
-        <div class="container">
-          <br />
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-              <form class="card card-sm">
-                <div class="card-body row no-gutters align-items-center">
-                  <div class="col-auto">
-                  </div>
-                  <!--end of col-->
-                  <div class="col">
-                    <input class="form-control form-control-lg form-control-borderless" type="search"
-                      placeholder="Search">
-                  </div>
-                  <!--end of col-->
-                  <div class="col-auto">
-                    <button class="btn btn-lg btn-warning" type="submit">Search</button>
-                  </div>
-                  <!--end of col-->
-                </div>
-              </form>
-            </div>
-            <!--end of col-->
-          </div>
-        </div>
       </nav>
-    </div>
 
-    <div>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div id="menu" class="carousel-item active">
-            <a href="starbucks.html" class="btn btn-outline-warning">Starbucks</a>
-            <a href="" class="btn btn-outline-warning">Tim Hortons</a>
-            <a href="" class="btn btn-outline-warning">Blenz</a>
-            <a href="" class="btn btn-outline-warning">Waves</a>
-          </div>
-          <div id="menu" class="carousel-item">
-            <a href="" class="btn btn-outline-warning">JJ Bean</a>
-            <a href="" class="btn btn-outline-warning">49th Parallel</a>
-            <a href="" class="btn btn-outline-warning">Milano</a>
-            <a href="" class="btn btn-outline-warning">Breka</a>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <form class="card card-sm">
+            <div class="card-body row no-gutters align-items-center">
+              <div class="col-auto">
+              </div>
+              <!--end of col-->
+              <div class="col">
+                <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search">
+              </div>
+              <!--end of col-->
+              <div class="col-auto">
+                <button class="btn btn-lg btn-warning" type="submit">Search</button>
+              </div>
+              <!--end of col-->
+            </div>
+          </form>
+        </div>
+        <!--end of col-->
+      </div>
+    </div>
+  </div>
+
+  <div id="drink">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="my-menu carousel-inner">
+        <div id="menu" class="carousel-item active">
+          <a href="starbucks.html" class="btn btn-outline-warning">Starbucks</a>
+          <a href="" class="btn btn-outline-warning">Tim Hortons</a>
+          <a href="" class="btn btn-outline-warning">Blenz</a>
+          <a href="" class="btn btn-outline-warning">Waves</a>
+        </div>
+        <div id="menu" class="carousel-item">
+          <a href="" class="btn btn-outline-warning">JJ Bean</a>
+          <a href="" class="btn btn-outline-warning">49th Parallel</a>
+          <a href="" class="btn btn-outline-warning">Milano</a>
+          <a href="" class="btn btn-outline-warning">Breka</a>
+        </div>
+      </div>
+      <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div id="drink">
+      <div>
+        <div id="drinkList">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="./images/hotcoffee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hot Coffees</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./images/hottea.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hot Teas</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./images/coldcoffee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cold Coffees</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./images/colddrink.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cold Drinks</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-      <div>
+      <div id="drinkList">
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
@@ -118,26 +154,27 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="fixed-bottom">
-      <ul class="nav d-flex justify-content-evenly">
-        <li class="nav-item">
-          <a class="nav-link fa fa-bars fa-2x" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fa fa-gift fa-2x" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fa fa-home fa-2x" href="main.html"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fa fa-heart fa-2x" href="#"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
-        </li>
-      </ul>
-    </div>
+  <div class="fixed-bottom">
+    <ul class="nav d-flex justify-content-evenly">
+      <li class="nav-item">
+        <a class="nav-link fa fa-bars fa-2x" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-gift fa-2x" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-home fa-2x" href="main.html"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-heart fa-2x" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
+      </li>
+    </ul>
+  </div>
   </div>
   <!-- Optional JavaScript; choose one of the two! -->
 

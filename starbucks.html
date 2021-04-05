@@ -4,8 +4,6 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>My BCIT Project</title>
-
 
   <!-- Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,8 +12,8 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Optional Styles and customizations of your own-->
-  <link rel="stylesheet" href="./ styles/my_bootstrap.css">
-  <link rel="stylesheet" href="./ styles/my_style.css">
+  <link rel="stylesheet" href="./styles/my_bootstrap.css">
+  <link rel="stylesheet" href="./styles/my_style.css">
 
   <title>Gift-Pick</title>
 </head>
@@ -26,110 +24,113 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Gift Pick</a>
-          <a href="login.html" class="btn btn-warning">Login</a>
-        </div>
-        <div class="container">
-          <br />
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-              <form class="card card-sm">
-                <div class="card-body row no-gutters align-items-center">
-                  <div class="col-auto">
-                  </div>
-                  <!--end of col-->
-                  <div class="col">
-                    <input class="form-control form-control-lg form-control-borderless" type="search"
-                      placeholder="Search">
-                  </div>
-                  <!--end of col-->
-                  <div class="col-auto">
-                    <button class="btn btn-lg btn-warning" type="submit">Search</button>
-                  </div>
-                  <!--end of col-->
-                </div>
-              </form>
-            </div>
-            <!--end of col-->
-          </div>
+          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbspLogin</a>
         </div>
       </nav>
+      <div class="container">
+        <br />
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <form class="card card-sm">
+              <div class="card-body row no-gutters align-items-center">
+                <div class="col-auto">
+                </div>
+                <!--end of col-->
+                <div class="col">
+                  <input class="form-control form-control-lg form-control-borderless" type="search"
+                    placeholder="Search">
+                </div>
+                <!--end of col-->
+                <div class="col-auto">
+                  <button class="btn btn-lg btn-warning" type="submit">Search</button>
+                </div>
+                <!--end of col-->
+              </div>
+            </form>
+          </div>
+          <!--end of col-->
+        </div>
+      </div>
     </div>
 
-    <div>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <a href="contact.html"><img src="./images/hotamericano.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Hot Americano</h5>
-              <p>$<span id="hotAmericano"></span></p>
+    <div id="brand">
+      <div>
+        <p class="miniTitle">Starbucks</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <a href="contact.html"><img src="./images/hotamericano.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Hot Americano</h5>
+                <p>$<span id="hotAmericano"></span></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="contact.html"><img src="./images/hottea.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Green Tea</h5>
-              <p>$<span id="greenTea"></span></p>
+          <div class="col">
+            <div class="card">
+              <a href="contact.html"><img src="./images/hottea.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Green Tea</h5>
+                <p>$<span id="greenTea"></span></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="contact.html"><img src="./images/icedamericano.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Iced Americano</h5>
-              <p>$<span id="icedAmericano"></span></p>
+          <div class="col">
+            <div class="card">
+              <a href="contact.html"><img src="./images/icedamericano.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Iced Americano</h5>
+                <p>$<span id="icedAmericano"></span></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="contact.html"><img src="./images/milk.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Cold Milk</h5>
-              <p>$<span id="coldMilk"></span></p>
+          <div class="col">
+            <div class="card">
+              <a href="contact.html"><img src="./images/milk.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Cold Milk</h5>
+                <p>$<span id="coldMilk"></span></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <a href="contact.html"><img src="./images/hotcoffee.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Caffe Latte</h5>
-              <p>$<span id="caffeLatte"></span></p>
+      <div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <a href="contact.html"><img src="./images/hotcoffee.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Caffe Latte</h5>
+                <p>$<span id="caffeLatte"></span></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="contact.html"><img src="./images/icedmocha.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Iced Caffe Mocha</h5>
-              <p>$<span id="icedCaffeMocha"></span></p>
+          <div class="col">
+            <div class="card">
+              <a href="contact.html"><img src="./images/icedmocha.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Iced Caffe Mocha</h5>
+                <p>$<span id="icedCaffeMocha"></span></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="contact.html"><img src="./images/coldcoffee.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Iced Caffe Latte</h5>
-              <p>$<span id="icedCaffeLatte"></span></p>
+          <div class="col">
+            <div class="card">
+              <a href="contact.html"><img src="./images/coldcoffee.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Iced Caffe Latte</h5>
+                <p>$<span id="icedCaffeLatte"></span></p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="contact.html"><img src="./images/colddrink.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Iced Tea</h5>
-              <p>$<span id="icedTea"></span></p>
+          <div class="col">
+            <div class="card">
+              <a href="contact.html"><img src="./images/colddrink.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Iced Tea</h5>
+                <p>$<span id="icedTea"></span></p>
+              </div>
             </div>
           </div>
         </div>

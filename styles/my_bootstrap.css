@@ -63,25 +63,12 @@
     background-color: transparent;
   }
 
-.card-img-top{
-  width: 25%;
-}
 
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  background: none;
-  border: 0;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 3rem;
+    width: 3rem;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    margin-top: 10rem;
 }

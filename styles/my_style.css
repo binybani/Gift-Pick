@@ -23,14 +23,22 @@ a:hover {
 
 #menu {
   width: 100%;
+  text-align: center;
+  margin-top: 10rem;
 }
 
 #menu>a {
-  margin: 0.8rem;
+  margin: 0.3rem;
 }
-
+.my-menu{
+  margin-bottom: 2rem;
+}
+#drinkList{
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
 .bn-btn {
-  width: 12rem;
+  width: 42%;
   margin: 1.2em;
   padding: 0.5em;
   font-weight: 600;
@@ -52,22 +60,51 @@ a:hover {
 
 
 
-#carouselExampleControls {
-  text-align: center;
-}
-
 .col {
   width: 25%;
+  margin-bottom: 1em;
 }
 .container1{
   display: block;
 }
-
-#endPage{
+#brand{
+  margin-top: 10rem;
+}
+.miniTitle{
   text-align: center;
-  font-size: 2em;
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
 }
 
+.person{
+  font-size: 2.5rem;
+  text-align: right;
+  
+}
+.person>div>img {
+  width: 3rem;
+}
+.person>div:first-child {
+  margin-left: 1em;
+  float: left;
+}
+.person>div:nth-child(2) {
+  margin-left: 1em;
+  float: left;
+}
+#contact{
+  float: left;
+  clear: both;
+}
+#endPage {
+  text-align: center;
+}
 #bye{
-  font-size: 2.5em;
+  font-size: 3em;
+}
+#bn-nav{
+margin-left: 7rem;
+}
+#drink{
+  
 }
