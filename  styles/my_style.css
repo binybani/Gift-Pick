@@ -2,48 +2,60 @@
 /* font-family: 'Pacifico', cursive; */
 /* font-family: 'Arimo', sans-serif; */
 
-body{
-    font-family: 'Arimo', sans-serif;
-    height: 100vh;
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  font-family: 'Arimo', sans-serif;
+  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003a52;
 }
-.my-btn{
-    margin: 1.2em;
-    padding: 0.5em;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    color: orange;
-  border-color: orange;
-  border: 3px;
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #003a52;
+}
+
+#menu {
+  width: 100%;
+}
+
+#menu>a {
+  margin: 0.8rem;
+}
+
+.bn-btn {
+  width: 12rem;
+  margin: 1.2em;
+  padding: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: orange;
 }
 
 .btn-outline-info {
-    width: 40%;
-    float: left;
-    color: orange;
-    border-color: orange;
-  }
+  width: 40%;
+  float: left;
+  color: orange;
+  border-color: orange;
+}
+
 .carousel-nav-icon {
-    height: 48px;
-    width: 48px;
- }
- .carousel-item {
-    .col, .col-sm, .col-md {
-       margin: 8px;
-       height: 300px;
-       background-size: cover;
-       background-position: center center;
-    }
- }
+  height: 48px;
+  width: 48px;
+}
 
 
- #carouselExampleControls{
-text-align: center;
- }
 
- .col{
-     width: 25%;
- }
+#carouselExampleControls {
+  text-align: center;
+}
+
+.col {
+  width: 25%;
+}

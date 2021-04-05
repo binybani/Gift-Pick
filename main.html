@@ -4,48 +4,46 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>My BCIT Project</title>
-
-
   <!-- Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+  
   <!-- Optional Styles and customizations of your own-->
-  <link rel="stylesheet" href="./styles/my_bootstrap.css">
-  <link rel="stylesheet" href="./styles/my_style.css">
+  <link rel="stylesheet" href="./ styles/my_bootstrap.css">
+  <link rel="stylesheet" href="./ styles/my_style.css">
 
   <title>Gift-Pick</title>
 </head>
 
 <body>
   <div class="container">
-    <div class="container-fluid">
+    <div class="container-fluid fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Gift Pick</a>
+          <a id="title" class="navbar-brand" href="#">Gift Pick</a>
           <a href="login.html" class="btn btn-warning">Login</a>
         </div>
-    </div>
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-warning" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
     </nav>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-warning" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+  </div>
 
-    <div id="buttonBox text-center">
+    <div id="text-center">
       <div>
-        <a class="my-btn btn ">Cake</a>
-        <a class="my-btn btn ">Flower</a>
+        <a class="btn btn-outline-warning bn-btn">Cake</a>
+        <a class="btn btn-outline-warning bn-btn">Flower</a>
       </div>
       <div>
-        <a class="my-btn btn ">Gift Card</a>
-        <a href="drink.html" class="my-btn btn ">Drink</a>
+        <a class="btn btn-outline-warning bn-btn">Gift Card</a>
+        <a href="drink.html" class="btn btn-outline-warning bn-btn">Drink</a>
         <!-- <button class="my-btn"></button> -->
       </div>
     </div>
@@ -73,22 +71,19 @@
           <div class="carousel-item" data-bs-interval="2000">
             <img src="./images/anniversary.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5>ANNIVERSARY</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./images/mother.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5>MOTHER'S DAY</h5>
             </div>
           </div>
           <div class="carousel-item">
             <img src="./images/father.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5>FATHER'S DAY</h5>
             </div>
           </div>
         </div>
@@ -102,25 +97,25 @@
         </button>
       </div>
     </div>
-    <div>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Your Order</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="main.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Favorite</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cart</a>
-      </li>
-    </ul>
-  </div>
+    <div class="fixed-bottom">
+      <ul class="nav d-flex justify-content-evenly">
+        <li class="nav-item">
+          <a class="nav-link fa fa-bars fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-gift fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-home fa-2x" href="main.html"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-heart fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
+        </li>
+      </ul>
+    </div>
   </div>
   <!-- Optional JavaScript; choose one of the two! -->
 
