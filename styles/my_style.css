@@ -21,6 +21,24 @@ a:hover {
   color: #003a52;
 }
 
+
+
+/* index, main */
+.bn-btn {
+  width: 40%;
+  margin: 1.2em;
+  padding: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: orange;
+}
+
+
+/* drink */
+.col {
+  width: 25%;
+  margin-bottom: 1em;
+}
 #menu {
   width: 100%;
   text-align: center;
@@ -37,45 +55,19 @@ a:hover {
   margin: 0.5rem;
   margin-bottom: 1rem;
 }
-.bn-btn {
-  width: 42%;
-  margin: 1.2em;
-  padding: 0.5em;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  color: orange;
-}
 
-.btn-outline-info {
-  width: 40%;
-  float: left;
-  color: orange;
-  border-color: orange;
-}
-
-.carousel-nav-icon {
-  height: 48px;
-  width: 48px;
-}
-
-
-
-.col {
-  width: 25%;
-  margin-bottom: 1em;
-}
-.container1{
-  display: block;
-}
+/* starbucks */
 #brand{
   margin-top: 10rem;
 }
+
+/* starbucks, payment*/
 .miniTitle{
   text-align: center;
   font-family: 'Pacifico', cursive;
   font-size: 3em;
 }
-
+/* contacts */
 .person{
   font-size: 2.5rem;
   text-align: right;
@@ -96,15 +88,28 @@ a:hover {
   float: left;
   clear: both;
 }
+
+/* end */
 #endPage {
   text-align: center;
 }
+
 #bye{
   font-size: 3em;
 }
+
+/* index, main */
 #bn-nav{
 margin-left: 7rem;
 }
+
+/* drink */
 #drink{
-  
+  width: 99%;
 }
+
+/* index */
+#text-center {
+  margin-top: 10rem;
+}
+
