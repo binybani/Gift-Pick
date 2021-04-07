@@ -1,14 +1,12 @@
 <!doctype html>
 <html lang="en">
-
+<!---This page use for after login-->
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>My BCIT Project</title>
-
-
   <!-- Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
@@ -21,31 +19,46 @@
 
 <body>
   <div class="container">
-    <div class="container-fluid">
+    <div class="container-fluid fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Gift Pick</a>
-          <a href="login.html" class="btn btn-warning">Login</a>
+          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbspLogin</a>
         </div>
+        <div id="bn-nav">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+              <form class="card card-sm">
+                <div class="card-body row no-gutters align-items-center">
+                  <div class="col-auto">
+                  </div>
+                  <!--end of col-->
+                  <div class="col">
+                    <input class="form-control form-control-lg form-control-borderless" type="search"
+                      placeholder="Search">
+                  </div>
+                  <!--end of col-->
+                  <div class="col-auto">
+                    <button class="btn btn-lg btn-warning" type="submit">Search</button>
+                  </div>
+                  <!--end of col-->
+                </div>
+              </form>
+            </div>
+            <!--end of col-->
+          </div>
+        </div>
+      </nav>
     </div>
-    </nav>
-    <nav class="navbar navbar-light bg-light">
-      <div class="container-fluid">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-warning" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
 
-    <div id="buttonBox text-center">
+    <div id="text-center">
       <div>
-        <a class="my-btn btn ">Cake</a>
-        <a class="my-btn btn ">Flower</a>
+        <a class="btn btn-outline-warning bn-btn">Cake</a>
+        <a class="btn btn-outline-warning bn-btn">Flower</a>
       </div>
       <div>
-        <a class="my-btn btn ">Gift Card</a>
-        <a href="drink.html" class="my-btn btn ">Drink</a>
+        <a class="btn btn-outline-warning bn-btn">Gift Card</a>
+        <a href="drink.html" class="btn btn-outline-warning bn-btn">Drink</a>
         <!-- <button class="my-btn"></button> -->
       </div>
     </div>
@@ -64,31 +77,28 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="/images/birthday.jpg" class="d-block w-100" alt="...">
+            <img src="./images/birthday.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>HAPPY BIRTHDAY</h5>
               <p></p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="/images/anniversary.jpg" class="d-block w-100" alt="...">
+            <img src="./images/anniversary.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5>ANNIVERSARY</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/images/mother.jpg" class="d-block w-100" alt="...">
+            <img src="./images/mother.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5>MOTHER'S DAY</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/images/father.jpg" class="d-block w-100" alt="...">
+            <img src="./images/father.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5>FATHER'S DAY</h5>
             </div>
           </div>
         </div>
@@ -102,26 +112,27 @@
         </button>
       </div>
     </div>
-    <div>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Your Order</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="main.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Favorite</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cart</a>
-      </li>
-    </ul>
+    <div class="fixed-bottom">
+      <ul class="nav d-flex justify-content-evenly">
+        <li class="nav-item">
+          <a class="nav-link fa fa-bars fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-gift fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-home fa-2x" href="main.html"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-heart fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
+        </li>
+      </ul>
+    </div>
   </div>
-  </div>
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: Bootstrap Bundle with Popper -->

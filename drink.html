@@ -4,40 +4,34 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <title>My BCIT Project</title>
-
-
   <!-- Bootstrap CSS -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Optional Styles and customizations of your own-->
-  <link rel="stylesheet" href="./ styles/my_bootstrap.css">
-  <link rel="stylesheet" href="./ styles/my_style.css">
+  <link rel="stylesheet" href="./styles/my_bootstrap.css">
+  <link rel="stylesheet" href="./styles/my_style.css">
 
   <title>Gift-Pick</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="container-fluid">
+  <div>
+    <div class="container-fluid fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Gift Pick</a>
-          <a href="login.html" class="btn btn-info">Login</a>
+          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbspLogin</a>
         </div>
-    </div>
-    </nav>
+      </nav>
 
-    <div class="container">
-      <br />
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8">
           <form class="card card-sm">
             <div class="card-body row no-gutters align-items-center">
               <div class="col-auto">
-                <i class="fas fa-search h4 text-body"></i>
               </div>
               <!--end of col-->
               <div class="col">
@@ -45,7 +39,7 @@
               </div>
               <!--end of col-->
               <div class="col-auto">
-                <button class="btn btn-lg btn-info" type="submit">Search</button>
+                <button class="btn btn-lg btn-warning" type="submit">Search</button>
               </div>
               <!--end of col-->
             </div>
@@ -54,35 +48,76 @@
         <!--end of col-->
       </div>
     </div>
-    <div>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="starbucks.html" class="btn btn-outline-warning">Starbucks</a>
-            <a href="" class="btn btn-outline-warning">Tim Hortons</a>
-            <a href="" class="btn btn-outline-warning">Blenz</a>
-            <a href="" class="btn btn-outline-warning">Waves</a>
-          </div>
-          <div class="carousel-item">
-            <a href="" class="btn btn-outline-warning">JJ Bean</a>
-            <a href="" class="btn btn-outline-warning">49th Parallel</a>
-            <a href="" class="btn btn-outline-warning">Milano</a>
-            <a href="" class="btn btn-outline-warning">Breka</a>
+  </div>
+
+  <div>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="my-menu carousel-inner">
+        <div id="menu" class="carousel-item active">
+          <a href="starbucks.html" class="btn btn-outline-warning">Starbucks</a>
+          <a href="" class="btn btn-outline-warning">Tim Hortons</a>
+          <a href="" class="btn btn-outline-warning">Blenz</a>
+          <a href="" class="btn btn-outline-warning">Waves</a>
+        </div>
+        <div id="menu" class="carousel-item">
+          <a href="" class="btn btn-outline-warning">JJ Bean</a>
+          <a href="" class="btn btn-outline-warning">49th Parallel</a>
+          <a href="" class="btn btn-outline-warning">Milano</a>
+          <a href="" class="btn btn-outline-warning">Breka</a>
+        </div>
+      </div>
+      <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div id="drink">
+      <div>
+        <div id="drinkList">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="./images/hotcoffee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hot Coffees</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./images/hottea.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Hot Teas</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./images/coldcoffee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cold Coffees</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="./images/colddrink.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cold Drinks</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-      <div>
+      <div id="drinkList">
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
             <div class="card">
@@ -118,27 +153,28 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-    </div>
-    <div>
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Your Order</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="main.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Favorite</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cart</a>
-        </li>
-      </ul>
-    </div>
+  <div class="fixed-bottom">
+    <ul class="nav d-flex justify-content-evenly">
+      <li class="nav-item">
+        <a class="nav-link fa fa-bars fa-2x" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-gift fa-2x" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-home fa-2x" href="main.html"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-heart fa-2x" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
+      </li>
+    </ul>
+  </div>
   </div>
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -153,6 +189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
 
+<<<<<<< HEAD
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->
@@ -196,6 +233,50 @@
       }
       //writeBrands();
     </script>
+=======
+  <!----------------------------------------------->
+  <!-- JS: Boostrap, Firebase, API related    -->
+  <!----------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+
+  <!-- Link to the api keys for your firebase project -->
+  <script src="scripts/firebase_api_beanie.js"></script>
+
+  <!--------------------------------------------------------------------->
+  <!-- JS files: Your own JavaScript functions included here    -->
+  <!--------------------------------------------------------------------->
+
+  <script>
+    function writeBrands() {
+      var brandsRef = db.collection("brands");
+
+      brandsRef.add({
+        code: "SB",
+        name: "Starbucks",
+      })
+      brandsRef.add({
+        code: "TH",
+        name: "Tim Hortons",
+      })
+      brandsRef.add({
+        code: "BZ",
+        name: "Blenz",
+      })
+      brandsRef.add({
+        code: "WV",
+        name: "Waves",
+      })
+    }
+    //writeBrands();
+  </script>
+>>>>>>> 5505376de243243cc6a3c6107daaf9af0ab4937a
 
 </body>
 

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Pacifico&display=swap');
+/* font-family: 'Pacifico', cursive; */
+/* font-family: 'Arimo', sans-serif; */
+
+body {
+  font-family: 'Arimo', sans-serif;
+  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #003a52;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #003a52;
+}
+
+
+
+/* index, main */
+.bn-btn {
+  width: 40%;
+  margin: 1.2em;
+  padding: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: orange;
+}
+
+
+/* drink */
+.col {
+  width: 25%;
+  margin-bottom: 1em;
+}
+#menu {
+  width: 100%;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+#menu>a {
+  margin: 0.3rem;
+}
+.my-menu{
+  margin-bottom: 2rem;
+}
+#drinkList{
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* starbucks */
+#brand{
+  margin-top: 10rem;
+}
+
+/* starbucks, payment*/
+.miniTitle{
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+}
+/* contacts */
+.person{
+  font-size: 2.5rem;
+  text-align: right;
+  
+}
+.person>div>img {
+  width: 3rem;
+}
+.person>div:first-child {
+  margin-left: 1em;
+  float: left;
+}
+.person>div:nth-child(2) {
+  margin-left: 1em;
+  float: left;
+}
+#contact{
+  float: left;
+  clear: both;
+}
+
+/* end */
+#endPage {
+  text-align: center;
+}
+
+#bye{
+  font-size: 3em;
+}
+
+/* index, main */
+#bn-nav{
+margin-left: 7rem;
+}
+
+/* drink */
+#drink{
+  width: 99%;
+}
+
+/* index */
+#text-center {
+  margin-top: 10rem;
+}
+
