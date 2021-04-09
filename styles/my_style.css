@@ -142,3 +142,16 @@ margin-left: 7rem;
   text-align: center;
   margin-left: 6rem;
 }
+/*message page*/
+#GPitem {
+  text-align: center;
+}
+#GPitem>img {
+  text-align: center;
+  width: 50%;
+  margin: 1em;
+}
+#messageSection{
+  text-align: center;
+  width: 100%;
+}
