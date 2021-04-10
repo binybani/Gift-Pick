@@ -41,7 +41,7 @@
           </div>
           <div>
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault"></label>
+            
           </div>
         </div>
 
@@ -57,6 +57,7 @@
           </div>
         </div>
 
+        
         <div class="person">
           <div>
             <img src="./images/person3.jpg">
@@ -153,7 +154,7 @@
     <!--------------------------------------------------------------------->
     <script>
       function readContact() {
-        db.collection("contacts").doc("1q2ZnG5rHJZy76tIASiO")
+        db.collection("contacts").doc("qPfMHfRRPCJCJAQ34hNn")
           .onSnapshot(function (snap) {
             console.log(snap.data());
             document.getElementById("person1").innerHTML = snap.data().name;
@@ -162,7 +163,7 @@
       readContact();
 
       function readContact2() {
-        db.collection("contacts").doc("3cEDWhnY3xC4ncfWgTJi")
+        db.collection("contacts").doc("5SRY3E3TS62Em6skmgsC")
           .onSnapshot(function (snap) {
             console.log(snap.data());
             document.getElementById("person2").innerHTML = snap.data().name;
@@ -171,7 +172,7 @@
       readContact2();
 
       function readContact3() {
-        db.collection("contacts").doc("5SRY3E3TS62Em6skmgsC")
+        db.collection("contacts").doc("V2yUAAiIibKjKj01ZHgl")
           .onSnapshot(function (snap) {
             console.log(snap.data());
             document.getElementById("person3").innerHTML = snap.data().name;
@@ -187,6 +188,15 @@
           })
       }
       readContact4();
+
+      function readContact5() {
+        db.collection("contacts").doc("3cEDWhnY3xC4ncfWgTJi")
+          .onSnapshot(function (snap) {
+            console.log(snap.data());
+            document.getElementById("person5").innerHTML = snap.data().name;
+          })
+      }
+      readContact5();
     </script>
     <!-- <script>
     function readDrink() {
