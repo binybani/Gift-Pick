@@ -23,7 +23,7 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Gift Pick</a>
-          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbspLogin</a>
+          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbsp<span id="name-goes-here"></span></a>
         </div>
       </nav>
 
@@ -116,43 +116,6 @@
           </div>
         </div>
       </div>
-
-      <div id="drinkList">
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="./images/hotcoffee.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Hot Coffees</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./images/hottea.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Hot Teas</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./images/coldcoffee.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Cold Coffees</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./images/colddrink.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Cold Drinks</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -207,7 +170,7 @@
   <!--------------------------------------------------------------------->
   <!-- JS files: Your own JavaScript functions included here    -->
   <!--------------------------------------------------------------------->
-
+  <script src="scripts/my_functions.js"></script>
   <script>
     function writeBrands() {
       var brandsRef = db.collection("brands");
