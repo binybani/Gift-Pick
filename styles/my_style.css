@@ -21,11 +21,9 @@ a:hover {
   color: #003a52;
 }
 
-
-
 /* index, main */
 .bn-btn {
-  width: 9.4rem;
+  width: 39%;
   margin: 1.2em;
   padding: 0.5em;
   font-weight: 600;
@@ -37,58 +35,56 @@ a:hover {
 /* drink */
 .col {
   width: 50%;
-  margin-bottom: 1em;
 }
-#menu {
+
+#brand {
   width: 100%;
   text-align: center;
   margin-top: 10rem;
 }
 
-#menu>a {
+#brand>a {
   font-size: 1em;
 }
-.my-menu{
+
+.my-brand {
   margin-bottom: 2rem;
 }
-#drink{
-  width: 99%;
-}
-#drinkList{
- 
-  margin-bottom: 1rem;
-}
-
 
 /* starbucks */
-#brand{
+#brandStarbucks {
   margin-top: 50rem;
 }
 
 /* starbucks, payment*/
-.miniTitle{
+.miniTitle {
   text-align: center;
   font-family: 'Pacifico', cursive;
   font-size: 3em;
 }
+
 /* contacts */
-.person{
+.person {
   font-size: 2rem;
   text-align: right;
-  
+
 }
+
 .person>div>img {
   width: 3rem;
 }
+
 .person>div:first-child {
   margin-left: 1em;
   float: left;
 }
+
 .person>div:nth-child(2) {
   margin-left: 1em;
   float: left;
 }
-#contact{
+
+#contact {
   float: left;
   clear: both;
 }
@@ -98,28 +94,27 @@ a:hover {
   text-align: center;
 }
 
-#bye{
+#bye {
   font-size: 3em;
 }
 
 /* index, main */
-#bn-nav{
-margin-left: 7rem;
+#bn-nav {
+  margin-left: 7rem;
 }
-
-
 
 /* index */
 #text-center {
+  width: 100%;
   margin-top: 4rem;
 }
 
 /*preview*/
-#preview{
+#preview {
   text-align: center;
 }
 
-#mainImg{
+#mainImg {
   width: 60%;
   float: left;
 }
@@ -127,37 +122,46 @@ margin-left: 7rem;
 #code {
   text-align: center;
 }
-#barcode{
+
+#barcode {
   width: 100%;
   height: 4rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-#qrcode{
+
+#qrcode {
   width: 7rem;
   float: left;
   clear: right;
   margin-left: 1rem;
 }
-#main{
+
+#main {
   text-align: center;
   margin-left: 2rem;
 }
+
 /*message page*/
 #GPitem {
   text-align: center;
 }
+
 #GPitem>img {
   text-align: center;
   width: 50%;
   margin: 1em;
 }
-#messageSection{
+
+#messageSection {
   text-align: center;
   width: 100%;
 }
 
 /*login*/
-.loginbottom{
-margin-top: -10em;
+.loginbottom {
+  margin-top: -300px;
+}
+#loginArea{
+  text-align: center;
 }

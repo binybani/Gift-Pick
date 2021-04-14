@@ -12,27 +12,28 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Optional Styles and customizations of your own-->
-  <link rel="stylesheet" href="./styles/my_bootstrap.css">
-  <link rel="stylesheet" href="./styles/my_style.css">
-
+  <link rel="stylesheet" href="../styles/my_bootstrap.css">
+  <link rel="stylesheet" href="../styles/my_style.css">
+  
   <title>Gift-Pick</title>
 </head>
 
 <body>
   <div class="container">
+    <!-- top nav bar -->
     <div class="container-fluid fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a id="title" class="navbar-brand" href="#">Gift Pick</a>
-          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbsp<span id="name-goes-here"></span></a>
+          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbsp<span
+              id="name-goes-here"></span></a>
         </div>
       </nav>
     </div>
     <div>
       <p class="miniTitle">CONTACTS</p>
-
+      <!-- individual contacts -->
       <div id="contact">
-      
         <div class="person">
           <div>
             <img src="./images/person1.jpg">
@@ -41,10 +42,8 @@
           </div>
           <div>
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            
           </div>
         </div>
-
         <div class="person">
           <div>
             <img src="./images/person2.jpg">
@@ -56,8 +55,6 @@
             <label class="form-check-label" for="flexCheckDefault"></label>
           </div>
         </div>
-
-        
         <div class="person">
           <div>
             <img src="./images/person3.jpg">
@@ -69,7 +66,6 @@
             <label class="form-check-label" for="flexCheckDefault"></label>
           </div>
         </div>
-
         <div class="person">
           <div>
             <img src="./images/person4.jpg">
@@ -81,7 +77,6 @@
             <label class="form-check-label" for="flexCheckDefault"></label>
           </div>
         </div>
-
         <div class="person">
           <div>
             <img src="./images/person5.jpg">
@@ -94,7 +89,12 @@
           </div>
         </div>
       </div>
-
+      <!-- back and foward button -->
+      <div>
+        <a href="starbucks.html" class="btn btn-outline-warning bn-btn">Previous</a>
+        <a href="Message.html" class="btn btn-outline-warning bn-btn">next</a>
+      </div>
+      <!-- bottom nav bar -->
       <div class="fixed-bottom">
         <ul class="nav d-flex justify-content-evenly">
           <li class="nav-item">
@@ -113,11 +113,6 @@
             <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
           </li>
         </ul>
-      </div>
-
-      <div>
-        <a href="starbucks.html" class="btn btn-outline-warning bn-btn">Previous</a>
-        <a href="Message.html" class="btn btn-outline-warning bn-btn">next</a>
       </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
@@ -146,12 +141,12 @@
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
 
     <!-- Link to the api keys for your firebase project -->
-    <script src="scripts/firebase_api_beanie.js"></script>
+    <script src="../scripts/firebase_api_beanie.js"></script>
 
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-    <script src="scripts/my_functions.js"></script>
+    <script src="../scripts/my_functions.js"></script>
     <script>
       function readContact() {
         db.collection("contacts").doc("qPfMHfRRPCJCJAQ34hNn")

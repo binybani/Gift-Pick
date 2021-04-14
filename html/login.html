@@ -14,52 +14,26 @@
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
 
     <!-- Optional styles and scripts of your own -->
-    <link rel="stylesheet" href="./styles/my_style.css">
+    <link rel="stylesheet" href="../styles/my_style.css">
 </head>
 
 <body>
-
-    <!-------------------------------------->
-    <!-- The following is HTML for layout -->
-    <!-------------------------------------->
-    <!-- Header Navigation Bar -->
-<div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand miniTitle" href="#">Gift Pick</a>
-            <a href="index.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>HOME</a>
-        </div>
-    </nav>
-
-
-
     <div class="container">
-        <h1 id="space"> </h1>
-        <h1> Let's get you logged in ... </h1>
-        <div id="firebaseui-auth-container"></div>
-        <div id="loader">Loading...</div>
+        <!-- top nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand miniTitle" href="#">Gift Pick</a>
+                <a href="../index.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>HOME</a>
+            </div>
+        </nav>
+        <!--login area-->
+        <div id="loginArea">
+            <h1> Let's get you logged in ... </h1>
+            <div id="firebaseui-auth-container"></div>
+            <div id="loader">Loading...</div>
+        </div>
     </div>
-
-    <div class="fixed-bottom loginbottom">
-        <ul class="nav d-flex justify-content-evenly">
-          <li class="nav-item">
-            <a class="nav-link fa fa-bars fa-2x" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fa fa-gift fa-2x" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fa fa-home fa-2x" href="main.html"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fa fa-heart fa-2x" href="#"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
-          </li>
-        </ul>
-    </div>
-</div>
+    
     <!----------------------------------------------->
     <!-- JS: Boostrap, Firebase, API related    -->
     <!----------------------------------------------->
@@ -71,7 +45,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
     <!-- Link to the api keys for your firebase project -->
-    <script src="scripts/firebase_api_beanie.js"></script>
+    <script src="../scripts/firebase_api_beanie.js"></script>
 
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->

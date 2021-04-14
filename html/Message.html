@@ -12,30 +12,33 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Optional Styles and customizations of your own-->
-  <link rel="stylesheet" href="./styles/my_bootstrap.css">
-  <link rel="stylesheet" href="./styles/my_style.css">
+  <link rel="stylesheet" href="../styles/my_bootstrap.css">
+  <link rel="stylesheet" href="../styles/my_style.css">
 
   <title>Gift-Pick</title>
 </head>
 
 <body>
   <div class="container">
+    <!--top nav bar-->
     <div class="container-fluid fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a id="title" class="navbar-brand" href="#">Gift Pick</a>
-          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbsp<span id="name-goes-here"></span></a>
+          <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbsp<span
+              id="name-goes-here"></span></a>
         </div>
       </nav>
     </div>
+    <!--message section-->
     <div>
-
       <p class="miniTitle">MESSAGE</p>
       <div id="GPitem">
-        <img src="./images/hotcoffee.jpg">
+        <img src="../images/hotcoffee.jpg">
         <h5 class="card-title">Caffe Latte</h5>
         <p>$<span id="caffeLatte"></span></p>
       </div>
+      <!--message option-->
       <div>
         <div>
           <a href="" class="btn btn-outline-warning bn-btn"><i class="fa fa-envelope-o fa-2x"
@@ -44,14 +47,16 @@
               aria-hidden="true"></i></a>
         </div>
         <div id="GPmessage" class="form-floating">
-          <textarea id="messageSection" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-          <label for="floatingTextarea">Happy birthday!</label>
+          <textarea id="messageSection" class="form-control" placeholder="Leave a comment here"
+            id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Wake up! Time to go work!</label>
         </div>
         <div>
           <a href="contact.html" class="btn btn-outline-warning bn-btn">Previous</a>
           <a href="preview.html" class="btn btn-outline-warning bn-btn">next</a>
         </div>
       </div>
+      <!--bottom nav bar-->
       <div class="fixed-bottom">
         <ul class="nav d-flex justify-content-evenly">
           <li class="nav-item">
@@ -98,67 +103,13 @@
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
 
     <!-- Link to the api keys for your firebase project -->
-    <script src="scripts/firebase_api_beanie.js"></script>
+    <script src="../scripts/firebase_api_beanie.js"></script>
 
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-    <script src="scripts/my_functions.js"></script>
+    <script src="../scripts/my_functions.js"></script>
     <script>
-      function readDrink() {
-        db.collection("starbucks").doc("coffees")
-          .onSnapshot(function (snap) {
-            console.log(snap.data());
-            document.getElementById("hotAmericano").innerHTML = snap.data().hotamericano;
-          })
-      }
-      readDrink();
-
-      function readDrink2() {
-        db.collection("starbucks").doc("teas")
-          .onSnapshot(function (snap) {
-            console.log(snap.data());
-            document.getElementById("greenTea").innerHTML = snap.data().greentea;
-          })
-      }
-      readDrink2();
-
-      function readDrink3() {
-        db.collection("starbucks").doc("coffees")
-          .onSnapshot(function (snap) {
-            console.log(snap.data());
-            document.getElementById("icedAmericano").innerHTML = snap.data().icedamericano;
-          })
-      }
-      readDrink3();
-
-      function readDrink4() {
-        db.collection("starbucks").doc("colddrinks")
-          .onSnapshot(function (snap) {
-            console.log(snap.data());
-            document.getElementById("coldMilk").innerHTML = snap.data().coldmilk;
-          })
-      }
-      readDrink4();
-
-      function readDrink5() {
-        db.collection("starbucks").doc("coffees")
-          .onSnapshot(function (snap) {
-            console.log(snap.data());
-            document.getElementById("icedCaffeMocha").innerHTML = snap.data().icedcaffemocha;
-          })
-      }
-      readDrink5();
-
-      function readDrink6() {
-        db.collection("starbucks").doc("coffees")
-          .onSnapshot(function (snap) {
-            console.log(snap.data());
-            document.getElementById("icedCaffeLatte").innerHTML = snap.data().icedcaffelatte;
-          })
-      }
-      readDrink6();
-
       function readDrink7() {
         db.collection("starbucks").doc("coffees")
           .onSnapshot(function (snap) {
@@ -167,15 +118,6 @@
           })
       }
       readDrink7();
-
-      function readDrink8() {
-        db.collection("starbucks").doc("teas")
-          .onSnapshot(function (snap) {
-            console.log(snap.data());
-            document.getElementById("icedTea").innerHTML = snap.data().icedtea;
-          })
-      }
-      readDrink8();
     </script>
 
 </body>

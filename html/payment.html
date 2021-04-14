@@ -12,8 +12,8 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <!-- Optional Styles and customizations of your own-->
-    <link rel="stylesheet" href="./styles/my_bootstrap.css">
-    <link rel="stylesheet" href="./styles/my_style.css">
+    <link rel="stylesheet" href="../styles/my_bootstrap.css">
+    <link rel="stylesheet" href="../styles/my_style.css">
 
     <title>Gift-Pick</title>
 </head>
@@ -24,21 +24,21 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <a id="title" class="navbar-brand" href="#">Gift Pick</a>
-                    <a href="login.html" class="btn btn-warning"><i class="fa fa-user"
-                            aria-hidden="true"></i>&nbsp<span id="name-goes-here"></span></a>
+                    <a href="login.html" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true"></i>&nbsp<span
+                            id="name-goes-here"></span></a>
                 </div>
             </nav>
         </div>
-        <div id="endPage">
-            <i class="fa fa-gift fa-5x" aria-hidden="true"></i>
-            <p id="bye"><b>Thank you!</b></p>
-            <p>Your Friend Receive This Gift Message Shorthly!</p>
-        </div>
+        <!--payment section-->
         <div>
-            <a href="#" class="btn btn-outline-warning bn-btn">History</a>
-            <a href="main.html" class="btn btn-outline-warning bn-btn">Home</a>
+            <p class="miniTitle"><b>PAYMENT</b></p>
         </div>
-
+        <!-- back and foward button -->
+        <div>
+            <a href="#" class="btn btn-outline-warning bn-btn">Previous</a>
+            <a href="end.html" class="btn btn-outline-warning bn-btn">Submit</a>
+        </div>
+        <!--bottom nav bar-->
         <div class="fixed-bottom">
             <ul class="nav d-flex justify-content-evenly">
                 <li class="nav-item">
@@ -85,10 +85,10 @@
     <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
 
     <!-- Link to the api keys for your firebase project -->
-    <script src="scripts/firebase_api_beanie.js"></script>
+    <script src="../scripts/firebase_api_beanie.js"></script>
 
     <!--------------------------------------------------------------------->
     <!-- JS files: Your own JavaScript functions included here    -->
     <!--------------------------------------------------------------------->
-    <script src="scripts/my_functions.js"></script>
+    <script src="../scripts/my_functions.js"></script>
 </body>

@@ -12,20 +12,15 @@
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- Optional Styles and customizations of your own-->
-  <link rel="stylesheet" href="./styles/my_bootstrap.css">
-  <link rel="stylesheet" href="./styles/my_style.css">
+  <link rel="stylesheet" href="../styles/my_bootstrap.css">
+  <link rel="stylesheet" href="../styles/my_style.css">
 
   <title>Gift-Pick</title>
 </head>
 
 <body>
-
-  <!-------------------------------------->
-  <!-- The following is HTML for layout -->
-  <!-------------------------------------->
-  <!-- Header Navigation Bar -->
   <div class="container">
-  <div>
+    <!--top nav bar-->
     <div class="container-fluid fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -33,6 +28,7 @@
           <a href="#" class="btn btn-warning"><i class="fa fa-user" aria-hidden="true">
             </i>&nbsp<span id="name-goes-here"></span></a>
         </div>
+        <!-- search bar -->
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8">
             <form class="card card-sm">
@@ -41,7 +37,8 @@
                 </div>
                 <!--end of col-->
                 <div class="col">
-                  <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search">
+                  <input class="form-control form-control-lg form-control-borderless" type="search"
+                    placeholder="Search">
                 </div>
                 <!--end of col-->
                 <div class="col-auto">
@@ -55,9 +52,7 @@
         </div>
       </nav>
     </div>
-
-    
-
+    <!--category button-->
     <div id="text-center">
       <div>
         <a class="btn btn-outline-warning bn-btn">Cake</a>
@@ -66,45 +61,39 @@
       <div>
         <a class="btn btn-outline-warning bn-btn">Gift Card</a>
         <a href="drink.html" class="btn btn-outline-warning bn-btn">Drink</a>
-        <!-- <button class="my-btn"></button> -->
       </div>
     </div>
-  </div>
-  
-  <div>
+    <!--category carousel-->
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img src="./images/birthday.jpg" class="d-block w-100" alt="...">
+          <img src="../images/birthday.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>HAPPY BIRTHDAY</h5>
             <p></p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="./images/anniversary.jpg" class="d-block w-100" alt="...">
+          <img src="../images/anniversary.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>ANNIVERSARY</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/mother.jpg" class="d-block w-100" alt="...">
+          <img src="../images/mother.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>MOTHER'S DAY</h5>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/father.jpg" class="d-block w-100" alt="...">
+          <img src="../images/father.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>FATHER'S DAY</h5>
           </div>
@@ -119,28 +108,27 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+    <!--bottom nav bar-->
+    <div class="fixed-bottom">
+      <ul class="nav d-flex justify-content-evenly">
+        <li class="nav-item">
+          <a class="nav-link fa fa-bars fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-gift fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-home fa-2x" href="main.html"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-heart fa-2x" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
+        </li>
+      </ul>
+    </div>
   </div>
-
-  <div class="fixed-bottom">
-    <ul class="nav d-flex justify-content-evenly">
-      <li class="nav-item">
-        <a class="nav-link fa fa-bars fa-2x" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fa fa-gift fa-2x" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fa fa-home fa-2x" href="main.html"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fa fa-heart fa-2x" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link fa fa-shopping-cart fa-2x" href="#"></a>
-      </li>
-    </ul>
-  </div>
-</div>
   <!----------------------------------------------->
   <!-- JS: Boostrap, Firebase, API related, JQuery    -->
   <!----------------------------------------------->
@@ -153,15 +141,12 @@
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
   <!-- Link to the api keys for your firebase project -->
-  <script src="scripts/firebase_api_beanie.js"></script>
+  <script src="../scripts/firebase_api_beanie.js"></script>
 
   <!--------------------------------------------------------------------->
   <!-- JS files: Your own JavaScript functions included here    -->
   <!--------------------------------------------------------------------->
-  <script src="scripts/my_functions.js"></script>
-  <script>
-    //call your functions here
-  </script>
+  <script src="../scripts/my_functions.js"></script>
 
 </body>
 

@@ -1,5 +1,6 @@
 # Gift-Pick
+Team 21
 Yubin Kim
-Beanie make main.html
 An Zhao
-An make profile.html
+
+Hosting URL: https://gift-pick.web.app
